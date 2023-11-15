@@ -1,7 +1,4 @@
 # logic.py
-import random
-
-
 class Board:
     def __init__(self):
         self.board = [[None, None, None], [None, None, None], [None, None, None]]
@@ -45,13 +42,6 @@ class Player:
             except ValueError:
                 print('Invalid input, please try again.')
 
-
-class Bot(Player):
-    def make_move(self, board):
-        while True:
-            x, y = random.randint(0, 2), random.randint(0, 2)
-            if board[x][y] is None:
-                return x, y
 
 class Game:
     def __init__(self):
