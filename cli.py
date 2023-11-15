@@ -1,7 +1,7 @@
 # cli.py
 import random
-
-from logic import Board, Player, Bot, Game
+from bot import Bot
+from logic import Board, Player, Game
 
 if __name__ == '__main__':
     while True:
