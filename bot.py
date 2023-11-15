@@ -1,6 +1,6 @@
 import random
 
-class Bot(Player):
+class Bot():
     def make_move(self, board):
         while True:
             x, y = random.randint(0, 2), random.randint(0, 2)
